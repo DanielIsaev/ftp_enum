@@ -57,7 +57,7 @@ python ftp_enum.py <host> [-u <username>] [-p <password>] [-r <recursion_depth>]
 
 Here is an example againts the Access machine from HTB:
 
-![example](https://github.com/DanielIsaev/ftp_enum/blob/main/img/adfnaoinfiavc.png) 
+![example](https://github.com/DanielIsaev/ftp_enum/blob/main/img/an4q789tqv.png) 
 
 ## License
 
