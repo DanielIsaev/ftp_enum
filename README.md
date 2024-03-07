@@ -31,17 +31,10 @@ Other then that have fun:)
 
 ### Installation
 
-You can either clone the repository:
+You can either download the script itself, or clone the repository:
 
 ```bash
 git clone https://github.com/DanielIsaev/ftp_enum.git; cd ftp_enum
-python3 ftp_enum.py --help
-```
-
-Or simply download the script itself:
-
-```bash
-wget https://github.com/DanielIsaev/ftp_enum/ftp_num.py
 python3 ftp_enum.py --help
 ```
 
