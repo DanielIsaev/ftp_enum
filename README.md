@@ -57,7 +57,7 @@ python ftp_enum.py <host> [-u <username>] [-p <password>] [-r <recursion_depth>]
 
 Here is an example againts the ServMon machine from HTB:
 
-![]() 
+![example](https://github.com/DanielIsaev/ftp_enum/blob/main/img/adfnaoinfiavc.png) 
 
 ## License
 
