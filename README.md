@@ -1,5 +1,3 @@
-# ftp_enum
-
 ## Description
 
 ftp_enum is a Python script that allows you to automatically map an FTP server's contents, and check the permissions on all directories recursivly. 
