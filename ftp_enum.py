@@ -95,12 +95,15 @@ if __name__ == '__main__':
             default='anonymous')
     parser.add_argument('-p', '--password', type=str, help='Password for the FTP server.', \
             default='anonymous')
+    parser.add_argument('-P', '--port', type=int, help='Specify the port of the FTP server, default is 21.', \
+            default=21)
     parser.add_argument('-r', '--recursion', type=int, help='Set the maximum recursion depth of the scan.')
     
     args = parser.parse_args()
     host = args.host
     username = args.username
     password = args.password
+    port = args.port
     recursion = args.recursion if args.recursion else None
     
 
@@ -113,10 +116,14 @@ if __name__ == '__main__':
     
     print(header, '\n')
     
-    with ftplib.FTP(host) as ftp:
-                
+    with ftplib.FTP() as ftp:
+        ftp.connect(host, port) 
         ftp.set_pasv(True)
-        ftp.login(username, password)
+        try:
+            ftp.login(username, password)
+        except ftplib.error_perm:
+            print(f'Incorrect credentials: {username}:{password}')
+            exit(1)
 
         _os = ' '.join(ftp.sendcmd('SYST').split(' ')[1:])
         _type = " ".join(ftp.getwelcome().split(" ")[1:])
