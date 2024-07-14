@@ -43,7 +43,7 @@ python3 ftp_enum.py --help
 pretty straightforward:
 
 ```bash
-python ftp_enum.py <host> [-u <username>] [-p <password>] [-r <recursion_depth>]
+python3 ftp_enum.py <host> [-u <username>] [-p <password>] [-r <recursion_depth>]
 ```
 
 ### Example
